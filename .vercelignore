@@ -1,0 +1,8 @@
+frontend/
+backups/
+.pytest_cache/
+pytest-of-ccc/
+.vscode/
+*.png
+__pycache__/
+*.pyc
