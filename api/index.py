@@ -53,7 +53,7 @@ BASE_CONFIG_PATH = PROJECT_ROOT / "configs" / "live_demo.yaml"
 TEMPLATE_PATH = PROJECT_ROOT / "app" / "assets" / "scenario_template.xlsx"
 MODE_TO_GROUP = {"hist_demand": "A", "no_risk_adjust": "B", "full": "C"}
 
-app = FastAPI(title="翼援航空应急救援调度 API", version="1.0.0")
+app = FastAPI(title="驰援调度 API", version="1.0.0")
 _origins = os.getenv("CORS_ORIGINS", "*").strip()
 app.add_middleware(
     CORSMiddleware,
@@ -253,7 +253,7 @@ def _model_metadata() -> dict[str, Any]:
 def _get_action(action: str, params: dict[str, Any]) -> Any:
     index = load_solution_index()
     if action == "health":
-        return {"status": "ok", "service": "wingaid-api", "version": app.version}
+        return {"status": "ok", "service": "chiyuan-api", "version": app.version}
     if action == "meta":
         return _model_metadata()
     if action == "examples":
