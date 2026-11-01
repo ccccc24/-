@@ -10,7 +10,7 @@
 后端：
 
 ```powershell
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 python -m uvicorn api.index:app --reload --host 127.0.0.1 --port 8000
 ```
 
@@ -88,4 +88,5 @@ app = FastAPI()
 ```
 
 可以让 Vercel 明确识别 FastAPI ASGI 入口。
+
 

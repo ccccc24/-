@@ -8,5 +8,9 @@ pytest-of-ccc/
 *.md
 *.png
 pytest.ini
+models/demand_rf.pkl
+outputs/*.csv
+outputs/excel_examples/
 __pycache__/
 *.pyc
+requirements-dev.txt

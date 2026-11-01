@@ -8,7 +8,7 @@
 当前主版本采用 **Next.js + React 前端 + FastAPI 后端**。Vercel 部署步骤见 [`docs/vercel_deployment.md`](docs/vercel_deployment.md)。
 
 ```powershell
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 cd frontend
 npm install
 Copy-Item .env.local.example .env.local
@@ -118,4 +118,5 @@ pytest -q
 - 示意路网，不是真实 GIS。
 - what-if 不自动重跑 A*。
 - 外部 LLM 成功路径主要使用模拟响应验证。
+
 
